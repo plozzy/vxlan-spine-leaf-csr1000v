@@ -113,16 +113,6 @@ interface GigabitEthernet2
  ip pim sparse-mode
  no shut
 !
-interface GigabitEthernet3
- ip address 10.0.34.43 255.255.255.0
- ip pim sparse-mode
- no shut
-!
-interface GigabitEthernet4
- ip address 10.0.44.44 255.255.255.0
- ip pim sparse-mode
- no shut
-!
 interface GigabitEthernet7
  no ip address
  ip pim sparse-mode
