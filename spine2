@@ -71,33 +71,21 @@ interface Loopback0
 interface GigabitEthernet0/1
  ip address 10.0.21.2 255.255.255.0
  ip pim sparse-mode
- duplex auto
- speed auto
- media-type rj45
  no shut
 !
 interface GigabitEthernet0/2
  ip address 10.0.22.2 255.255.255.0
  ip pim sparse-mode
- duplex auto
- speed auto
- media-type rj45
  no shut
 !
 interface GigabitEthernet0/3
  ip address 10.0.23.2 255.255.255.0
  ip pim sparse-mode
- duplex auto
- speed auto
- media-type rj45
  no shut
 !
 interface GigabitEthernet0/4
  ip address 10.0.24.2 255.255.255.0
  ip pim sparse-mode
- duplex auto
- speed auto
- media-type rj45
  no shut
 !
 router eigrp 100
