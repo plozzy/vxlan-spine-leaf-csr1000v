@@ -71,20 +71,13 @@ interface Loopback0
  ip pim sparse-mode
  ip igmp join-group 239.254.254.254
 !
-interface GigabitEthernet0/0
- ip address 10.12.34.1 255.255.255.0
- ip pim sparse-mode
- shutdown
- duplex auto
- speed auto
- media-type rj45
-!
 interface GigabitEthernet0/1
  ip address 10.0.11.1 255.255.255.0
  ip pim sparse-mode
  duplex auto
  speed auto
  media-type rj45
+ no shut
 !
 interface GigabitEthernet0/2
  ip address 10.0.12.1 255.255.255.0
@@ -92,6 +85,7 @@ interface GigabitEthernet0/2
  duplex auto
  speed auto
  media-type rj45
+ no shut
 !
 interface GigabitEthernet0/3
  ip address 10.0.13.1 255.255.255.0
@@ -99,6 +93,7 @@ interface GigabitEthernet0/3
  duplex auto
  speed auto
  media-type rj45
+ no shut
 !
 interface GigabitEthernet0/4
  ip address 10.0.14.1 255.255.255.0
@@ -106,28 +101,7 @@ interface GigabitEthernet0/4
  duplex auto
  speed auto
  media-type rj45
-!
-interface GigabitEthernet0/5
- no ip address
- shutdown
- duplex auto
- speed auto
- media-type rj45
-!
-interface GigabitEthernet0/6
- no ip address
- shutdown
- duplex auto
- speed auto
- media-type rj45
-!
-interface GigabitEthernet0/7
- no ip address
- shutdown
- duplex auto
- speed auto
- media-type rj45
-!
+ no shut
 !
 router eigrp 100
  network 0.0.0.0
