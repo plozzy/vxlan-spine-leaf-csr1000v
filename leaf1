@@ -123,11 +123,10 @@ interface GigabitEthernet7
 !
 !
 interface nve1
- no ip address
  source-interface Loopback0
  member vni 6010 mcast-group 239.0.60.10
- no mop enabled
- no mop sysid
+ no shut
+
 !
 !
 router eigrp 100
